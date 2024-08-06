@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    @genaral
+-------------------------------------------------------------------*/
+/* grid */
+
+/*-------------------------------------------------------------------
+    @elements
+-------------------------------------------------------------------*/
+/* button */
+.btn-wrap{}
+
+.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
+.btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
+
+/* icon */
+i[class^='ic-']{}
+
+/* bullet */
+
+/* list */
+.list-wrap{}
+
+.list-wrap.v1{}
+
+/* img list */
+.img-list{}
+
+.img-list.v1{}
+
+/* form, input */
+.inp-wrap{}
+.inp-item{}
+
+.inp-item input[type="text"]{}
+
+.phone .inp-item{}
+
+/* title */
+.tit-wrap{}
+.tit-wrap .tit{}
+
+.tit.v1{}
+
+/* text */
+.txt-warning{}
+.txt-comment{}
+
+/* table */
+.tbl-wrap{}
+.tbl-wrap table{ width: 100%; table-layout: fixed; }
+
+.tbl-wrap.v1{}
+
+/* paging */
+.paging{}
+.paging ul{}
+.paging ul li{}
+.paging ul li a{}
+.paging ul li.front{}
+.paging ul li.prev{}
+.paging ul li.next{}
+.paging ul li.back{}
+
+/*-------------------------------------------------------------------
+    @collections
+-------------------------------------------------------------------*/
+/* form group */
+
+/* form mixins */

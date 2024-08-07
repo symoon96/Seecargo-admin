@@ -3,13 +3,19 @@
 /*-------------------------------------------------------------------
     파일정의 : 레이아웃
 -------------------------------------------------------------------*/
+body {display: flex; flex-direction: column;}
 /*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header{}
-#header.on{}
+#header {flex: none; width: 100%;}
+#header .container {display: flex; align-items: center;}
+#header .logo {flex: none;}
+#header #gnb {flex: 1 0; min-width: 0;}
+#header #gnb ul {display: flex; justify-content: flex-start;}
+#header .util {display: flex;}
+#header .util .mode {display: flex;}
 
-.logo{}
+.logo {width: 120px; height: 24px; background: url('../img/common/logo.png') no-repeat center/100%;}
 .logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
 .gnb{}
@@ -50,10 +56,17 @@
 /*-------------------------------------------------------------------
     @content
 -------------------------------------------------------------------*/
-#content{}
+.wrapper {display: flex; align-items: stretch; flex: 1 0; width: 100%; min-height: 0;}
 
-.container{ margin-left: auto; margin-right: auto; position: relative; }
-.container::after{ display: block; clear: both; content: ""; }
+#lnb {flex: none;}
+
+#content {flex: 1 0; min-width: 0; display: flex; flex-direction: column;}
+#content .headline-depth01 {flex: none; width: 100%;}
+#content .contents {flex: 1 0; min-height: 0;}
+#content .contents > .container {display: flex; flex-direction: column; height: 100%;}
+#content .contents > .container > .division {flex: 1 0; min-height: 0;}
+
+.container {margin-left: auto; margin-right: auto; position: relative; padding-left: 20px; padding-right: 20px;}
 
 .has-padding{}
 

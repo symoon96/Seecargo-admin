@@ -3,17 +3,26 @@
 /*-------------------------------------------------------------------
     파일정의 : 레이아웃
 -------------------------------------------------------------------*/
-body {display: flex; flex-direction: column;}
+body {display: flex; flex-direction: column; background-color: #F1F3F5;}
 /*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header {flex: none; width: 100%;}
-#header .container {display: flex; align-items: center;}
+#header {flex: none; width: 100%; background: linear-gradient(90deg, #212529 60%, #495057 100%); box-shadow: 0 1px 1px 0 #0000000D;}
+#header .container {display: flex; align-items: center; gap: 0 80px;}
+
 #header .logo {flex: none;}
+
 #header #gnb {flex: 1 0; min-width: 0;}
-#header #gnb ul {display: flex; justify-content: flex-start;}
-#header .util {display: flex;}
-#header .util .mode {display: flex;}
+#header #gnb ul {display: flex; justify-content: flex-start; gap: 0 20px;}
+#header #gnb ul li a {position: relative; padding: 0 20px; line-height: 50px; text-align: center; color: #ffffff; font-size: 14px; font-weight: 700; display: block;}
+#header #gnb ul li.on a {color: #9775FA;}
+#header #gnb ul li.on a::after {content: ""; width: 100%; height: 4px; background-color: #9775FA; position: absolute; left: 0; bottom: 0;}
+
+#header .util {display: flex; gap: 0 20px;}
+#header .util .scanner {position: relative; width: 200px;}
+#header .util .scanner input[type="text"] {border-radius: 100px;}
+#header .util .scanner .btn-search {position: absolute; right: 20px; top: 8px;}
+#header .util .mode {display: flex; border-radius: 30px; overflow: hidden;}
 
 .logo {width: 120px; height: 24px; background: url('../img/common/logo.png') no-repeat center/100%;}
 .logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
@@ -58,18 +67,36 @@ body {display: flex; flex-direction: column;}
 -------------------------------------------------------------------*/
 .wrapper {display: flex; align-items: stretch; flex: 1 0; width: 100%; min-height: 0;}
 
-#lnb {flex: none;}
+#lnb {flex: none; width: 210px; background-color: #CED4DA; padding: 20px 20px;}
+#lnb .text-depth {display: flex; align-items: center; gap: 0 4px;}
+#lnb .text-depth p {font-size: 20px; line-height: 1.2; color: #6741D9; font-weight: 500;}
+#lnb ul {margin-top: 20px;}
+#lnb ul li + li {margin-top: 8px;}
+#lnb ul li a {display: flex; align-items: center; justify-content: flex-start; width: 100%; padding: 10px 20px; border-radius: 8px; background-color: #E9ECEF; gap: 0 4px;}
+#lnb ul li a p {font-size: 12px; color: #343434; font-weight: 600; line-height: 1.3334;}
+#lnb ul li.on a {background-color: #7950F2;}
+#lnb ul li.on a p {color: #ffffff;}
+#lnb ul li a i.ic-lnb01 {background-image: url('../img/icon/ic_lnb_off_01.png')}
+#lnb ul li a i.ic-lnb02 {background-image: url('../img/icon/ic_lnb_off_02.png')}
+#lnb ul li a i.ic-lnb03 {background-image: url('../img/icon/ic_lnb_off_03.png')}
+#lnb ul li.on a i.ic-lnb01 {background-image: url('../img/icon/ic_lnb_on_01.png')}
+#lnb ul li.on a i.ic-lnb02 {background-image: url('../img/icon/ic_lnb_on_02.png')}
+#lnb ul li.on a i.ic-lnb03 {background-image: url('../img/icon/ic_lnb_on_03.png')}
 
 #content {flex: 1 0; min-width: 0; display: flex; flex-direction: column;}
-#content .headline-depth01 {flex: none; width: 100%;}
-#content .contents {flex: 1 0; min-height: 0;}
+
+#content .headline-depth01 {flex: none; width: 100%; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between;}
+#content .headline-depth01 .tit-area .tit {font-size: 16px; font-weight: 700;}
+#content .headline-depth01 .tit-area .txt {font-size: 12px; font-weight: 600; color: #868E96; margin-top: 4px;}
+
+.division {background-color: #ffffff; border-radius: 20px; padding: 20px 20px; flex: 1 0; min-height: 0;}
+.division + .division {margin-top: 10px;}
+.division:has(.lookup) {flex: none;}
+
+#content .contents {flex: 1 0; min-height: 0; padding-bottom: 25px;}
 #content .contents > .container {display: flex; flex-direction: column; height: 100%;}
-#content .contents > .container > .division {flex: 1 0; min-height: 0;}
 
 .container {margin-left: auto; margin-right: auto; position: relative; padding-left: 20px; padding-right: 20px;}
-
-.has-padding{}
-
 /*-------------------------------------------------------------------
     @floating
 -------------------------------------------------------------------*/

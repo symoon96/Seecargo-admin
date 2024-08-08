@@ -116,7 +116,9 @@
 .pb95{ padding-bottom: 95px !important; }
 .pb100{ padding-bottom: 100px !important; }
 
-/* Border */
+/* width */
+.w160 {width: 160px !important;}
+.w400 {width: 400px !important;}
 
 /* Align*/
 .ta-l{ text-align: left; }
@@ -126,25 +128,30 @@
 /* 말줄임 */
 
 /* Flexible */
-.fx{ display: flex; }
+.d-flex {display: flex !important;}
 
-.fx.fd-c{ flex-direction: column; }
+.flex-direction-column {flex-direction: column !important;}
 
-.fx.wrap{ flex-wrap: wrap; }
+.flex-wrap-wrap {flex-wrap: wrap !important;}
 
-.fx.jc-c{ justify-content: center; }
-.fx.jc-sb{ justify-content: space-between; }
+.justify-content-center {justify-content: center !important;}
+.justify-content-between {justify-content: space-between !important;}
 
-.fx.ai-fs{ align-items: flex-start; }
-.fx.ai-fe{ align-items: flex-end; }
-.fx.ai-c{ align-items: center; }
-.fx.ai-s{ align-items: stretch; }
+.align-items-start {align-items: flex-start !important;}
+.align-items-end {align-items: flex-end !important;}
+.align-items-center {align-items: center !important;}
+.align-items-stretch {align-items: stretch !important;}
 
-.fx-none{ flex: none; }
+.flex-none {flex: none !important;}
 
-.fx1{ flex: 1 0 !important; }
-.fx2{ flex: 2 0 !important; }
-.fx3{ flex: 3 0 !important; }
+.gap-0 {gap: 0 !important;}
+.gap-1 {gap: 5px !important;}
+.gap-2 {gap: 10px !important;}
+.gap-3 {gap: 15px !important;}
+.gap-4 {gap: 20px !important;}
+.gap-5 {gap: 25px !important;}
+
+.col-1 {flex: 1 0 !important;}
 
 /*-------------------------------------------------------------------
     @Only (Display 스타일은 다양하므로 숨길경우만 사용)

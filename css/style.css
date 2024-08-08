@@ -4,3 +4,22 @@
     파일정의 : 메인 스타일
 -------------------------------------------------------------------*/
 /* 공통 */
+.lookup {display: flex; align-items: center; justify-content: space-between;}
+.lookup .lookup-l {display: flex; gap: 0 20px;}
+.lookup .lookup-l dl {display: flex; align-items: flex-start; gap: 0 10px;}
+.lookup .lookup-l dl dt {font-size: 12px; padding: 8px 0; line-height: 1.3334; color: #868E96;}
+.lookup .lookup-l dl dd {display: flex; gap: 0 10px;}
+
+/* 씨카고 이용정보 > 고객 이용현황 */
+.service-status {margin: 30px auto 0; max-width: 1285px;}
+.service-status .item {display: flex; align-items: center; gap: 0 40px; padding: 20px 40px; border-radius: 20px; background-color: #F8F9FA;}
+.service-status .item + .item {margin-top: 10px;}
+.service-status .item .tit-area {flex: none;}
+.service-status .item .tit-area p {border-radius: 50%; width: 100px; height: 100px; line-height: 100px; text-align: center; color: #ffffff; font-size: 14px; font-weight: 600;}
+.service-status .item:nth-child(1) .tit-area p {background-color: #7950F2;}
+.service-status .item:nth-child(2) .tit-area p {background-color: #9775FA;}
+.service-status .item .cont-area {flex: 1 0; display: flex; gap: 0 80px;}
+.service-status .item .cont-area dl {flex: 1 0; position: relative; min-width: 0;}
+.service-status .item .cont-area dl + dl::before {content: ""; width: 1px; height: 40px; background-color: #E9ECEF; position: absolute; left: -40px; top: 50%; transform: translateY(-50%);}
+.service-status .item .cont-area dl dt {font-size: 12px; line-height: 1.3334; font-weight: 600; text-align: center; color: #868E96;}
+.service-status .item .cont-area dl dd {font-size: 20px; line-height: 1.5; font-weight: 600; text-align: center; margin-top: 4px;}

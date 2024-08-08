@@ -11,11 +11,33 @@
 /* button */
 .btn-wrap{}
 
-.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
+.btn {border: 1px solid transparent; padding: 0 0; margin: 0 0; display: flex; align-items: center; justify-content: center;}
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
 
+.btn.md {height: 32px; gap: 0 4px; padding: 0 10px; font-weight: 600; font-size: 12px;}
+
+.btn.fill-purple {background-color: #9775FA; border-radius: #9775FA; color: #ffffff;}
+
+.btn.circle {border-radius: 500px;}
+
+.btn-ic.square {border-radius: 8px; width: 32px; height: 32px;}
+
+.btn-ic.square.gray {border: 1px solid #CED4DA;}
+
+.btn-search {width: 16px; height: 16px; background-image: url('../img/icon/ic_search.png')}
+.btn-search.square {background-size: 16px;}
+.btn-date {width: 16px; height: 16px; background-image: url('../img/icon/ic_date.png')}
+
 /* icon */
-i[class^='ic-']{}
+i[class^='ic-'] {display: block; flex: none; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+
+.ic-member {width: 16px; height: 16px;}
+.ic-member.white {background-image: url('../img/icon/ic_member_w.png')}
+.ic-user {width: 16px; height: 16px; background-image: url('../img/icon/ic_user.png');}
+.ic-admin {width: 16px; height: 16px; background-image: url('../img/icon/ic_admin.png');}
+[class^="ic-depth"] {width: 24px; height: 24px;}
+.ic-depth01 {background-image: url('../img/icon/ic_gnb_01.png');}
+[class^="ic-lnb"] {width: 16px; height: 16px;}
 
 /* bullet */
 
@@ -41,7 +63,7 @@ i[class^='ic-']{}
 .tit-wrap{}
 .tit-wrap .tit{}
 
-.tit.v1{}
+.tit.v1 {font-size: 14px; line-height: 1.143; font-weight: 600;}
 
 /* text */
 .txt-warning{}
@@ -66,6 +88,19 @@ i[class^='ic-']{}
 /*-------------------------------------------------------------------
     @collections
 -------------------------------------------------------------------*/
-/* form group */
+/* form */
+input[type="text"],
+input[type="password"] {display: block; width: 100%; height: 32px; border: 1px solid #CED4DA; border-radius: 8px; font-size: 12px; padding: 0 20px;}
 
-/* form mixins */
+.radio.v1 {width: fit-content;}
+.radio.v1 input[type="radio"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+.radio.v1 input[type="radio"] + label {padding: 8px 16px; width: fit-content; display: flex; align-items: center; justify-content: center; gap: 0 2px; background-color: #ffffff;}
+.radio.v1 input[type="radio"] + label p {font-size: 12px; line-height: 1.5; color: #343434;}
+.radio.v1 input[type="radio"]:checked + label {background-color: #7950F2;}
+.radio.v1 input[type="radio"]:checked + label p {font-weight: 600; color: #ffffff;}
+
+/* form group */
+.period {width: 200px;}
+.period .date {position: relative;}
+.period .date input[type="text"] {padding-right: 48px;}
+.period .date .btn-date {position: absolute; right: 20px; top: 8px;}

@@ -1,0 +1,1395 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Default</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"></h1>
+            <div id="gnb">
+                <ul>
+                    <li class="on"><a href="javascript:void(0);">씨카고 이용정보</a></li>
+                    <li><a href="javascript:void(0);">씨카고 서비스</a></li>
+                    <li><a href="javascript:void(0);">정산</a></li>
+                    <li><a href="javascript:void(0);">게시판 관리</a></li>
+                    <li><a href="javascript:void(0);">SL 관리자</a></li>
+                    <li><a href="javascript:void(0);">씨카고 시스템</a></li>
+                </ul>
+            </div>
+            <div class="util">
+                <div class="scanner">
+                    <input type="text" name="" id="" placeholder="회사 검색">
+                    <button class="btn-ic btn-search"></button>
+                </div>
+                <button class="btn md circle fill-labendar"><i class="ic-member white"></i>에스엘솔루션</button>
+                <div class="mode">
+                    <div class="radio v1">
+                        <input type="radio" name="" id="">
+                        <label for="">
+                            <i class="ic-user"></i>
+                            <p>사용자 모드</p>
+                        </label>
+                    </div>
+                    <div class="radio v1">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <i class="ic-admin"></i>
+                            <p>SL관리자 모드</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div class="wrapper">
+        <div id="lnb">
+            <div class="text-depth">
+                <i class="ic-depth01"></i>
+                <p>씨카고 이용정보</p>
+            </div>
+
+            <ul>
+                <li><a href="javascript:void(0);"><i class="ic-lnb01"></i><p>고객 이용현황</p></a></li>
+                <li><a href="javascript:void(0);"><i class="ic-lnb02"></i><p>회사 등록/관리</p></a></li>
+                <li class="on"><a href="javascript:void(0);"><i class="ic-lnb03"></i><p>사용자/운전자 관리</p></a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="headline-depth01">
+                <div class="tit-area">
+                    <p class="tit">사용지/운전자 관리</p>
+                    <p class="txt">씨카고를 이용하는 회사의 사용자 | 운전자 정보를 등록/관리합니다.</p>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="container">
+                    <div class="tab-wrap v1 flex-1" data-use="true">
+                        <div class="division flex-none">
+                            <div class="tab-btn-wrap">
+                                <button class="tab-btn on">사용자</button>
+                                <button class="tab-btn">운전자</button>
+                            </div>
+                        </div>
+
+                        <div class="tab-cont-wrap">
+                            <div class="tab-cont">
+                                <div class="division">
+                                    <div class="lookup">
+                                        <div class="lookup-l">
+                                            <dl>
+                                                <dt>사용여부</dt>
+                                                <dd>
+                                                    <div class="d-flex gap-1 pt4">
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="" checked>
+                                                            <label for="">
+                                                                <p>전체</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="">
+                                                            <label for="">
+                                                                <p>사용</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="">
+                                                            <label for="">
+                                                                <p>미사용</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>요금제</dt>
+                                                <dd>
+                                                    <select name="" id="" class="select v1 w160">
+                                                        <option value="">전체</option>
+                                                    </select>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>검색</dt>
+                                                <dd>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="search w400">
+                                                            <input type="text" name="" id="" placeholder="회사명, 담당자 이름으로 검색 할 수 있습니다.">
+                                                            <button class="btn-ic btn-search"></button>
+                                                        </div>
+                                                        <button class="btn-ic btn-reset gray"></button>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division d-flex flex-direction-column">
+                                    <div class="list-top flex-none">
+                                        <div class="sort-area">
+                                            <dl>
+                                                <dt>전체</dt>
+                                                <dd>100</dd>
+                                            </dl>
+            
+                                            <select name="" id="" class="select v2">
+                                                <option value="">20개씩 보기</option>
+                                            </select>
+                                        </div>
+                                        <div class="etc-area">
+                                            <button class="btn-txt v1"><i class="ic-add"></i>신규 등록</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="list-wrap v1 mt10 flex-1">
+                                        <div class="list-head">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 60px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 140px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>No.</th>
+                                                        <th>사용여부<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>권한<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>이름<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>아이디<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>전화번호<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>이메일<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>회사명<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>소속지점<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>부서<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>직위<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>작성자<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>최초 등록일<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>최종 수정일<button class="btn-ic btn-sort down"></button></th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="list-body scroll-yx">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 60px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 140px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>일반관리자</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>kim01@gmail.com</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+            
+                                    <div class="list-bottom">
+                                        <div class="paging">
+                                            <ul>
+                                                <li class="front"><a href="javascript:void(0);"></a></li>
+                                                <li class="prev"><a href="javascript:void(0);"></a></li>
+                                                <li class="on"><a href="javascript:void(0);">1</a></li>
+                                                <li><a href="javascript:void(0);">2</a></li>
+                                                <li><a href="javascript:void(0);">3</a></li>
+                                                <li><a href="javascript:void(0);">4</a></li>
+                                                <li><a href="javascript:void(0);">5</a></li>
+                                                <li class="next"><a href="javascript:void(0);"></a></li>
+                                                <li class="back"><a href="javascript:void(0);"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-cont">
+                                <div class="division">
+                                    <div class="lookup">
+                                        <div class="lookup-l">
+                                            <dl>
+                                                <dt>사용여부</dt>
+                                                <dd>
+                                                    <div class="d-flex gap-1 pt4">
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="" checked>
+                                                            <label for="">
+                                                                <p>전체</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="">
+                                                            <label for="">
+                                                                <p>사용</p>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio v2">
+                                                            <input type="radio" name="" id="">
+                                                            <label for="">
+                                                                <p>미사용</p>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>요금제</dt>
+                                                <dd>
+                                                    <select name="" id="" class="select v1 w160">
+                                                        <option value="">전체</option>
+                                                    </select>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>검색</dt>
+                                                <dd>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="search w400">
+                                                            <input type="text" name="" id="" placeholder="회사명, 담당자 이름으로 검색 할 수 있습니다.">
+                                                            <button class="btn-ic btn-search"></button>
+                                                        </div>
+                                                        <button class="btn-ic btn-reset gray"></button>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division d-flex flex-direction-column">
+                                    <div class="list-top flex-none">
+                                        <div class="sort-area">
+                                            <dl>
+                                                <dt>전체</dt>
+                                                <dd>100</dd>
+                                            </dl>
+            
+                                            <select name="" id="" class="select v2">
+                                                <option value="">20개씩 보기</option>
+                                            </select>
+                                        </div>
+                                        <div class="etc-area">
+                                            <button class="btn-txt v1"><i class="ic-add"></i>신규 등록</button>
+                                        </div>
+                                    </div>
+            
+                                    <div class="list-wrap v1 mt10 flex-1">
+                                        <div class="list-head">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 60px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th>No.</th>
+                                                        <th>사용여부<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>소속<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>이름<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>아이디<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>차량번호<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>전화번호<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>회사명<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>지점명<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>직위<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>작성자<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>최초 등록일<button class="btn-ic btn-sort down"></button></th>
+                                                        <th>최종 수정일<button class="btn-ic btn-sort down"></button></th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="list-body scroll-yx">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 60px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: auto;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 90px;">
+                                                    <col style="width: 120px;">
+                                                    <col style="width: 120px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>직영</td>
+                                                        <td><button class="btn sm circle line-blue">홍길동</button></td>
+                                                        <td>Kim0001</td>
+                                                        <td>99나 1234</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용</td>
+                                                        <td>센터A</td>
+                                                        <td>과장</td>
+                                                        <td>홍길동</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                        <td>2024.02.01 09:10</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+            
+                                    <div class="list-bottom">
+                                        <div class="paging">
+                                            <ul>
+                                                <li class="front"><a href="javascript:void(0);"></a></li>
+                                                <li class="prev"><a href="javascript:void(0);"></a></li>
+                                                <li class="on"><a href="javascript:void(0);">1</a></li>
+                                                <li><a href="javascript:void(0);">2</a></li>
+                                                <li><a href="javascript:void(0);">3</a></li>
+                                                <li><a href="javascript:void(0);">4</a></li>
+                                                <li><a href="javascript:void(0);">5</a></li>
+                                                <li class="next"><a href="javascript:void(0);"></a></li>
+                                                <li class="back"><a href="javascript:void(0);"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+</body>
+</html>

@@ -23,3 +23,19 @@
 .service-status .item .cont-area dl + dl::before {content: ""; width: 1px; height: 40px; background-color: #E9ECEF; position: absolute; left: -40px; top: 50%; transform: translateY(-50%);}
 .service-status .item .cont-area dl dt {font-size: 12px; line-height: 1.3334; font-weight: 600; text-align: center; color: #868E96;}
 .service-status .item .cont-area dl dd {font-size: 20px; line-height: 1.5; font-weight: 600; text-align: center; margin-top: 4px;}
+
+/* 팝업 */
+/* 주소등록 팝업 */
+.pop-search-address {width: 950px;}
+.pop-search-address .search-address {display: flex; align-items: stretch;}
+.pop-search-address .search-address > div {height: 545px;}
+.pop-search-address .search-address .search-area {padding: 40px 40px; flex: none; width: 400px; display: flex; flex-direction: column;}
+.pop-search-address .search-address .search-area > .form {flex: 1 0; min-height: 0;}
+.pop-search-address .search-address .search-area > .form:first-of-type {flex: none;}
+.pop-search-address .search-address .search-area > .form .form-cont {flex: 1 0; min-height: 0; display: flex; flex-direction: column;}
+.pop-search-address .search-address .search-area > .form .form-cont .scroll-y {flex: 1 0; min-height: 0;}
+.pop-search-address .search-address .search-area > .form .form-cont .paging {flex: none;}
+.pop-search-address .search-address .map-area {background-color: #F1F3F5; flex: 1 0;}
+
+/* 회사검색 팝업 */
+.pop-search-company {width: 890px;}

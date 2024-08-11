@@ -99,6 +99,7 @@
                 <div class="etc-area">
                     <button class="btn-txt v1"><i class="ic-list"></i>목록</button>
                     <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-save"></i>저장</button>
+                    <button class="btn-txt v1 red" onclick="popOpenAndDim('pop-alert02', true)"><i class="ic-delete red"></i>삭제</button>
                 </div>
             </div>
 
@@ -116,7 +117,7 @@
                                     <p class="tit">회사명</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="한글,영문만 입력 가능, 최대 20자까지">
+                                    <input type="text" name="" id="" placeholder="한글,영문만 입력 가능, 최대 20자까지" value="내용내용내용내용내용내용내용내용내용내용내용">
                                 </div>
                             </div>
                             <div class="form row">
@@ -124,7 +125,7 @@
                                     <p class="tit">대표자명</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) 홍길동">
+                                    <input type="text" name="" id="" placeholder="예시) 홍길동" value="홍길동">
                                 </div>
                             </div>
                         </div>
@@ -134,7 +135,7 @@
                                     <p class="tit">사업자번호</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="숫자만 입력">
+                                    <input type="text" name="" id="" placeholder="숫자만 입력" value="111-11-11111">
                                 </div>
                             </div>
                             <div class="form row imp">
@@ -142,7 +143,7 @@
                                     <p class="tit">대표전화</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="숫자만 입력">
+                                    <input type="text" name="" id="" placeholder="숫자만 입력" value="070-1111-2222">
                                 </div>
                             </div>
                             <div class="form row imp">
@@ -151,9 +152,9 @@
                                 </div>
                                 <div class="form-cont">
                                     <div class="address">
-                                        <input type="text" name="" id="">
+                                        <input type="text" name="" id="" value="서울시 마포구 만리재로 47 (공덕동, 공덕코어)">
                                         <button class="btn md line-gray" onclick="popOpenAndDim('pop-search-address', true)">주소검색</button>
-                                        <input type="text" name="" id="" placeholder="상세주소">
+                                        <input type="text" name="" id="" placeholder="상세주소" value="15층 최회사">
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +170,7 @@
                                     <p class="tit">이름</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) 홍길동">
+                                    <input type="text" name="" id="" placeholder="예시) 홍길동" value="홍길동">
                                 </div>
                             </div>
                             <div class="form row">
@@ -177,7 +178,7 @@
                                     <p class="tit">부서</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="한글,영문만 입력 가능, 최대 20자까지">
+                                    <input type="text" name="" id="" placeholder="한글,영문만 입력 가능, 최대 20자까지" value="경영팀">
                                 </div>
                             </div>
                             <div class="form row">
@@ -185,7 +186,7 @@
                                     <p class="tit">직위</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) 과장">
+                                    <input type="text" name="" id="" placeholder="예시) 과장" value="과장">
                                 </div>
                             </div>
                         </div>
@@ -195,7 +196,7 @@
                                     <p class="tit">전화번호</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="숫자만 입력">
+                                    <input type="text" name="" id="" placeholder="숫자만 입력" value="010-1234-5678">
                                 </div>
                             </div>
                             <div class="form row">
@@ -203,7 +204,7 @@
                                     <p class="tit">이메일</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com">
+                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com" value="aaa@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -220,13 +221,13 @@
                                 <div class="form-cont">
                                     <div class="d-flex gap-2 pt10">
                                         <div class="radio v3">
-                                            <input type="radio" name="" id="">
+                                            <input type="radio" name="" id="" checked>
                                             <label for="">
                                                 <p>신청</p>
                                             </label>
                                         </div>
                                         <div class="radio v3">
-                                            <input type="radio" name="" id="" checked>
+                                            <input type="radio" name="" id="">
                                             <label for="">
                                                 <p>신청안함</p>
                                             </label>
@@ -239,7 +240,7 @@
                                     <p class="tit">발행 담당자 이름</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) 홍길동" disabled>
+                                    <input type="text" name="" id="" placeholder="예시) 홍길동" value="홍길동">
                                 </div>
                             </div>
                             <div class="form row imp">
@@ -247,7 +248,7 @@
                                     <p class="tit">발행 이메일1</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com" disabled>
+                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com" value="aaa@gmail.com">
                                 </div>
                             </div>
                             <div class="form row">
@@ -255,7 +256,7 @@
                                     <p class="tit">발행 이메일2</p>
                                 </div>
                                 <div class="form-cont">
-                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com" disabled>
+                                    <input type="text" name="" id="" placeholder="예시) aaa@gmail.com" value="aaa@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -265,7 +266,7 @@
                                     <p class="tit">사업자 구분</p>
                                 </div>
                                 <div class="form-cont">
-                                    <select name="" id="" class="select v1" disabled>
+                                    <select name="" id="" class="select v1">
                                         <option value="">법인</option>
                                     </select>
                                 </div>
@@ -276,8 +277,8 @@
                                 </div>
                                 <div class="form-cont">
                                     <div class="d-flex gap-1">
-                                        <input type="text" name="" id="" class="flex-1" placeholder="업태 입력" disabled>
-                                        <input type="text" name="" id="" class="flex-1" placeholder="업종 입력" disabled>
+                                        <input type="text" name="" id="" class="flex-1" placeholder="업태 입력" value="내용내용내용">
+                                        <input type="text" name="" id="" class="flex-1" placeholder="업종 입력" value="내용내용내용">
                                     </div>
                                 </div>
                             </div>
@@ -287,8 +288,8 @@
                                 </div>
                                 <div class="form-cont">
                                     <div class="file">
-                                        <input type="text" name="" id="" disabled>
-                                        <button class="btn md line-gray" disabled>파일선택</button>
+                                        <input type="text" name="" id="" value="㈜에스엘솔루션_사업자등록증.pdf">
+                                        <button class="btn md line-gray">파일선택</button>
                                     </div>
                                 </div>
                                 <p class="form-txt">최대 100MB 이하 JPG, GIF, PNG 파일만 업로드 가능합니다.</p>
@@ -324,7 +325,7 @@
 
                             <div class="etc-area">
                                 <button class="btn-txt v1"><i class="ic-add"></i>추가</button>
-                                <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert02', true)"><i class="ic-delete"></i>삭제</button>
+                                <button class="btn-txt v1"><i class="ic-delete"></i>삭제</button>
                             </div>
                         </div>
 
@@ -395,6 +396,33 @@
                                             </td>
                                             <td>
                                                 <input type="text" name="" id="" placeholder="최대 25자까지 입력 가능">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="switch">
+                                                    <input type="checkbox" name="" id="" checked>
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="지점명 입력" value="내용내용내용내용내용내용내용내용내용">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="한글,영문만 입력 가능" value="홍길동">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="숫자만 입력" value="02-1234-5678">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="최대 25자까지 입력 가능" value="내용내용내용내용내용내용내용내용내용내용내용내용">
                                             </td>
                                         </tr>
                                     </tbody>

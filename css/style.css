@@ -39,3 +39,8 @@
 
 /* 회사검색 팝업 */
 .pop-search-company {width: 890px;}
+.pop-search-company .pop-body {padding: 20px 40px;}
+.pop-search-company .search-area {max-width: 465px; margin: 0 auto;}
+.pop-search-company .search-area dl {display: flex; align-items: center; gap: 0 10px;}
+.pop-search-company .search-area dl dt {font-size: 12px; color: #868E96;}
+.pop-search-company .list-wrap.v3 {height: 380px;}

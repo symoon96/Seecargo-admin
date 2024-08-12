@@ -243,12 +243,12 @@ input[type="password"]:disabled {background-color: #F1F3F5; border-color: #F1F3F
 .radio.v3 input[type="radio"] + label p {font-size: 12px; line-height: 1.334; text-align: left; color: #868E86; padding-left: 16px;}
 .radio.v3 input[type="radio"]:checked + label::before {background: url('../img/icon/ic_inp_radio_on_01.png') no-repeat center; background-size: 100%;}
 
-.radio.v3 {width: fit-content;}
-.radio.v1 input[type="radio"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
-.radio.v3 input[type="radio"] + label {position: relative; min-width: 24px; min-height: 24px; width: fit-content; display: block; background-color: #F1F3F5; border-radius: 4px; padding: 5px 4px;}
-.radio.v3 input[type="radio"] + label p {font-size: 12px; font-weight: 500; color: #868E96; text-align: center;}
-.radio.v3 input[type="radio"]:checked + label {background-color: #4C6EF5;}
-.radio.v3 input[type="radio"]:checked + label p {color: #ffffff;}
+.radio.v4 {width: fit-content;}
+.radio.v4 input[type="radio"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+.radio.v4 input[type="radio"] + label {position: relative; min-width: 24px; min-height: 24px; width: fit-content; display: block; background-color: #F1F3F5; border-radius: 4px; padding: 5px 4px;}
+.radio.v4 input[type="radio"] + label p {font-size: 12px; font-weight: 500; color: #868E96; text-align: center;}
+.radio.v4 input[type="radio"]:checked + label {background-color: #4C6EF5;}
+.radio.v4 input[type="radio"]:checked + label p {color: #ffffff;}
 
 .check.v1 {width: fit-content;}
 .check.v1 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
@@ -258,14 +258,14 @@ input[type="password"]:disabled {background-color: #F1F3F5; border-color: #F1F3F
 .check.v1 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_inp_check_on_01.png') no-repeat center; background-size: 100%;}
 
 .check.v2 {width: fit-content;}
-.check.v1 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
+.check.v2 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
 .check.v2 input[type="checkbox"] + label {position: relative; min-width: 20px; min-height: 20px; width: fit-content; display: block;}
 .check.v2 input[type="checkbox"] + label::before {content: ""; width: 20px; height: 20px; background: url('../img/icon/ic_inp_check_off_02.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .check.v2 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_inp_check_on_02.png') no-repeat center; background-size: 100%;}
 
 .select.v1 {display: block; width: 100%; height: 32px; border: 1px solid #CED4DA; border-radius: 8px; font-size: 12px; padding: 0 20px; background: #ffffff url('../img/icon/ic_inp_select.png') no-repeat right 20px center; background-size: 16px;}
 
-.select.v1:disabled {background: #F1F3F5 url('../img/icon/ic_inp_select_d.png') no-repeat right 20px center; background-size: 16px;}
+.select.v1:disabled {background: #F1F3F5 url('../img/icon/ic_inp_select_d.png') no-repeat right 20px center; background-size: 16px; border-color: #F1F3F5;}
 
 .select.v2 {display: block; height: 32px; border-radius: 16px; font-size: 12px; padding: 0 50px 0 20px; background: #F1F3F5 url('../img/icon/ic_inp_select.png') no-repeat right 20px center; background-size: 16px; border: 1px solid #F1F3F5}
 
@@ -277,6 +277,7 @@ input[type="password"]:disabled {background-color: #F1F3F5; border-color: #F1F3F
 .form .form-txt::before {content: ""; width: 2px; height: 2px; border-radius: 50%; background-color: #868E96; position: absolute; left: 10px; top: 5px;}
 
 .form.row {display: flex; flex-direction: column; gap: 6px 0;}
+.form.row .form-tit {display: flex; align-items: center; gap: 0 20px;}
 .form.row .form-tit .tit {font-size: 12px; font-weight: 600; line-height: 1.3334; color: #868E96;}
 .form.row.imp .form-tit .tit::after {content: "*"; color: #4C6EF5; font-size: 12px; font-weight: 600;}
 
@@ -311,3 +312,7 @@ input[type="password"]:disabled {background-color: #F1F3F5; border-color: #F1F3F
 .ip {display: flex; justify-content: flex-start; align-items: center; gap: 0 6px;}
 .ip input[type="text"] {width: 60px;}
 .ip span {flex: none; font-size: 12px; font-weight: 600; color: #868E96;}
+
+.car-group {display: flex; justify-content: flex-start; align-items: center; gap: 0 8px;}
+.car-group .select.v1 {width: 155px; flex: none;}
+.car-group input[type="text"] {flex: 1 0;}

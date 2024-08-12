@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Default</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"></h1>
+            <div id="gnb">
+                <ul>
+                    <li class="on"><a href="javascript:void(0);">씨카고 이용정보</a></li>
+                    <li><a href="javascript:void(0);">씨카고 서비스</a></li>
+                    <li><a href="javascript:void(0);">정산</a></li>
+                    <li><a href="javascript:void(0);">게시판 관리</a></li>
+                    <li><a href="javascript:void(0);">SL 관리자</a></li>
+                    <li><a href="javascript:void(0);">씨카고 시스템</a></li>
+                </ul>
+            </div>
+            <div class="util">
+                <div class="scanner">
+                    <input type="text" name="" id="" placeholder="회사 검색">
+                    <button class="btn-ic btn-search"></button>
+                </div>
+                <button class="btn md circle fill-labendar"><i class="ic-member white"></i>에스엘솔루션</button>
+                <div class="mode">
+                    <div class="radio v1">
+                        <input type="radio" name="" id="">
+                        <label for="">
+                            <i class="ic-user"></i>
+                            <p>사용자 모드</p>
+                        </label>
+                    </div>
+                    <div class="radio v1">
+                        <input type="radio" name="" id="" checked>
+                        <label for="">
+                            <i class="ic-admin"></i>
+                            <p>SL관리자 모드</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div class="wrapper">
+        <div id="lnb">
+            <div class="text-depth">
+                <i class="ic-depth01"></i>
+                <p>씨카고 이용정보</p>
+            </div>
+
+            <ul>
+                <li><a href="javascript:void(0);"><i class="ic-lnb01"></i><p>고객 이용현황</p></a></li>
+                <li><a href="javascript:void(0);"><i class="ic-lnb02"></i><p>회사 등록/관리</p></a></li>
+                <li class="on"><a href="javascript:void(0);"><i class="ic-lnb03"></i><p>사용자/운전자 관리</p></a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="headline-depth02">
+                <div class="tit-area">
+                    <button class="btn-ic btn-back"></button>
+                    <p class="tit">운전자 등록</p>
+                </div>
+
+                <div class="etc-area">
+                    <button class="btn-txt v1"><i class="ic-list"></i>목록</button>
+                    <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-save"></i>저장</button>
+                    <button class="btn-txt v1 red" onclick="popOpenAndDim('pop-alert02', true)"><i class="ic-delete red"></i>삭제</button>
+                </div>
+            </div>
+
+            <div class="contents">
+                <div class="container">
+                    <div class="division">
+                        <div class="tit-wrap v1">
+                            <div class="tit-area">
+                                <p class="tit v1">운전자 정보 관리</p>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">회사명</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <input type="text" name="" id="" placeholder="회사 검색" disabled>
+                                        <button class="btn-ic square gray btn-search flex-none" onclick="popOpenAndDim('pop-search-company', true)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">지점</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">지점 선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">소속</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="radio-group v1">
+                                        <div class="radio v5">
+                                            <input type="radio" name="" id="" checked>
+                                            <label for="">
+                                                <p>직영</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v5">
+                                            <input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>지입</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v5">
+                                            <input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>용차</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">이름</p>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="한글,영문만 입력 가능, 최대 20자까지" value="홍길동">
+                                </div>
+                            </div>
+                            <div class="form row">
+                                <div class="form-tit">
+                                    <p class="tit">직위</p>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="예시) 과장" value="과장">
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">전화번호</p>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="숫자만 입력" value="010-1234-5678">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">아이디</p>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="영문+숫자 조합으로 6자 이상" value="abcd1234">
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">비밀번호</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="pw">
+                                        <input type="password" name="" id="" placeholder="영문+숫자+특수문자 조합으로 8자 이상" value="***************">
+                                        <button class="btn-ic btn-view show"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">비밀번호 확인</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="pw">
+                                        <input type="password" name="" id="" placeholder="비밀번호 재입력">
+                                        <button class="btn-ic btn-view show"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tit-wrap v1 mt50">
+                            <div class="tit-area">
+                                <p class="tit v1">차량 관리</p>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">차량 총 중량(ton)</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">차량번호</p>
+                                </div>
+                                <div class="form-cont">
+                                    <input type="text" name="" id="" placeholder="차량번호 입력" value="11가 1234">
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">차종</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">화물차</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">통행요금 구분</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">1종</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">최대 용적량(CBM)</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">연료</p>
+                                </div>
+                                <div class="form-cont">
+                                    <select name="" id="" class="select v1">
+                                        <option value="">자동차 경유</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">유류 구입지역</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="d-flex gap-2">
+                                        <select name="" id="" class="select v1">
+                                            <option value="">서울특별시</option>
+                                        </select>
+                                        <select name="" id="" class="select v1">
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- case1: 그룹 있는 경우 -->
+                            <div class="form row imp w660">
+                                <div class="form-tit">
+                                    <p class="tit">차량번호 그룹 지정</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="car-group">
+                                        <select name="" id="" class="select v1">
+                                            <option value="">A</option>
+                                        </select>
+                                        <input type="text" name="" id="" placeholder="직접입력" value="경유차량">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// case1: 그룹 있는 경우 -->
+
+                            <!-- case2: 그룹 없는 경우 -->
+                            <!-- <div class="form row imp w660">
+                                <div class="form-tit">
+                                    <p class="tit">차량번호 그룹 지정</p>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="car-group">
+                                        <select name="" id="" class="select v1" disabled>
+                                            <option value="">선택</option>
+                                        </select>
+                                        <input type="text" name="" id="" placeholder="직접입력" disabled>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--// case2: 그룹 없는 경우 -->
+                        </div>
+                        <div class="tit-wrap v1 mt50">
+                            <div class="tit-area">
+                                <p class="tit v1">출발・도착지 정보</p>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">출발지 주소</p>
+                                    <div class="check v1">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <label for="">
+                                            <p>배송 출발지 주소와 동일</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="address">
+                                        <input type="text" name="" id="" value="서울시 마포구 만리재로 47(신공덕동, 공덕코어)">
+                                        <button class="btn md line-gray" onclick="popOpenAndDim('pop-search-address', true)">주소검색</button>
+                                        <input type="text" name="" id="" placeholder="상세주소" value="15층">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-wrap mt20">
+                            <div class="form row imp">
+                                <div class="form-tit">
+                                    <p class="tit">도착지 주소(개인화 도착지)</p>
+                                    <div class="check v1">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <label for="">
+                                            <p>출발지 주소와 동일</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-cont">
+                                    <div class="address">
+                                        <input type="text" name="" id="" value="서울시 마포구 만리재로 47(신공덕동, 공덕코어)">
+                                        <button class="btn md line-gray" onclick="popOpenAndDim('pop-search-address', true)">주소검색</button>
+                                        <input type="text" name="" id="" placeholder="상세주소" value="15층">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- 레이어팝업-주소등록 -->
+    <div class="popup layer pop-search-address">
+        <div class="pop-head">
+            <p class="tit">주소등록</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-search-address', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="search-address">
+                <div class="search-area">
+                    <div class="form row">
+                        <div class="form-tit">
+                            <p class="tit">주소검색</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="search">
+                                <div class="word">
+                                    <input type="text" name="" id="">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- case1: 검색결과 -->
+                    <!-- <div class="form row mt20">
+                        <div class="form-tit">
+                            <p class="tit">검색결과</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="list-wrap v2">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="paging mt10">
+                                <ul>
+                                    <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                    <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                    <li class="on"><a href="javascript:void(0);">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li><a href="javascript:void(0);">3</a></li>
+                                    <li><a href="javascript:void(0);">4</a></li>
+                                    <li><a href="javascript:void(0);">5</a></li>
+                                    <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                    <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--// case1: 검색결과 -->
+
+                    <!-- case2: 검색결과 클릭시 -->
+                    <div class="form row mt20">
+                        <div class="form-tit">
+                            <p class="tit">상세주소 입력</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="tbl-wrap v1">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 65px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>우편번호</th>
+                                            <td>12345</td>
+                                        </tr>
+                                        <tr>
+                                            <th>도로명주소</th>
+                                            <td>내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>지번주소</th>
+                                            <td>내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>상세주소</th>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="상세주소 입력">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// case2: 검색결과 클릭시 -->
+                </div>
+                <div class="map-area"></div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-search-address', true);"><i class="ic-close white"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-search-address', true);"><i class="ic-submit white"></i>등록</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-주소등록 -->
+
+    <!-- 알럿팝업-알림1 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">알림</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">필수 항목을 모두 입력해 주세요.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-submit white"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-알림1 -->
+
+    <!-- 알럿팝업-알림2 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">알림</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">해당 운전자를 삭제하시겠습니까?</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert02', true);"><i class="ic-close white"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert02'); popOpen('pop-alert03')"><i class="ic-submit white"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-알림2 -->
+
+    <!-- 알럿팝업-알림3 -->
+    <div class="popup alert pop-alert03">
+        <div class="pop-head">
+            <p class="tit">알림</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">삭제가 완료되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert03', true);"><i class="ic-submit white"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-알림3 -->
+</body>
+</html>
